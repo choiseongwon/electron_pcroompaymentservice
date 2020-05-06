@@ -1,0 +1,79 @@
+:root {
+    --white-color: #fff;
+
+    --small-size: 15px;
+    --midium-size: 20px;
+
+
+    --padding: 10px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: gray;
+}
+
+body ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--padding);
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .logo img {
+    height: 50px;
+    width: 250px;
+}
+
+.header .logo .comment {
+    color: var(--white-color);
+    font-size:var(--small-size);   
+}
+
+.header .shop_name {
+    margin-top: auto;
+}
+
+.header .shop_name .name{
+    color: var(--white-color);
+    font-size: var(--midium-size);
+}
+
+.main {
+    border: solid darkgray;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .payment {
+    flex: 1 1 30%;
+    border: solid gray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main .payment ul {
+    display: contents;
+}
+.main .payment .text {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom:solid gray;
+}
+
+.main .time {
+    flex: 1 1 70%;
+    border: solid gray;
+    border-radius: 5px;
+}
